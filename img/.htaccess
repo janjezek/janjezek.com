@@ -1,0 +1,3 @@
+<Files "photo.png">
+  Header set X-Robots-Tag "noindex"
+</Files>
