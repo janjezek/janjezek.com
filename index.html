@@ -7,8 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRTKE6W2GL"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRTKE6W2GL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -20,13 +19,16 @@
       gtag("config", "G-XRTKE6W2GL");
     </script>
     <style>
+      /* * {
+        border: 1px solid red;
+      } */
       :root {
         --primary-color: #31aab7;
         --secondary-color: #617889;
       }
       body {
-        font-family: "Lato", sans-serif;
-        color: #232323;
+        font-family: "Inter", sans-serif;
+        color: #737373;
       }
       h1,
       h2,
@@ -34,8 +36,27 @@
       h4,
       h5,
       h6 {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: #08090a;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      @media (max-width: 620px) {
+        h1 {
+          font-size: 1.875rem;
+        }
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      h4 {
+        font-size: 1.15rem;
+        margin-bottom: 0.1rem !important;
       }
       .btn-primary,
       .bg-primary {
@@ -86,23 +107,22 @@
         height: 50px;
       }
       .container {
-        max-width: 800px; /* Adjust the width as needed */
+        max-width: 624px; /* Adjust the width as needed */
         margin: auto;
       }
     </style>
   </head>
   <body>
-    <div class="container mt-5">
+    <div class="container my-5 px-24">
       <div class="row align-items-center mb-4 profile-container">
         <div class="col-md-8 col-9">
           <h1>Hi, I'm Jan 👋</h1>
-          <p></p>
-          <p><i class="bi bi-geo-alt-fill"></i> Amsterdam 🇳🇱</p>
+
+          <div style="margin-bottom: 0.5rem"><i class="bi bi-geo-alt-fill" style="color: #08090a"></i> Amsterdam 🇳🇱</div>
           <div>
-            <!-- <a href="mailto:hi@janjezek.com" class="text-dark me-3"><i class="bi bi-envelope"></i></a> -->
-            <a href="https://x.com/janjezekcom" class="text-dark me-3"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://github.com/janjezek" class="text-dark me-3"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/janjezekcom/" class="text-dark me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/janjezekcom" target="_blank" class="text-dark me-3"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://github.com/janjezek" target="_blank" class="text-dark me-3"><i class="bi bi-github"></i></a>
+            <!-- <a href="https://www.linkedin.com/in/janjezekcom/" class="text-dark me-3"><i class="bi bi-linkedin"></i></a> -->
           </div>
         </div>
         <div class="col-md-4 col-3 text-md-end profile-image-container">
@@ -343,14 +363,14 @@
         <div class="row">
           <div class="col-md-6 mb-4">
             <div class="card">
-              <a href="https://readymadespeech.com/">
+              <a href="https://readymadespeech.com/" target="_blank">
                 <img src="img/readymadespeech.png" class="card-img-top" alt="ReadyMadeSpeech" />
               </a>
               <div class="card-body">
-                <h5 class="card-title">
-                  <a href="https://readymadespeech.com/" class="text-dark text-decoration-none">ReadyMadeSpeech</a>
-                </h5>
-                <p class="card-text">August 2024</p>
+                <h4 class="card-title">
+                  <a href="https://readymadespeech.com/" target="_blank" class="text-dark text-decoration-none">ReadyMadeSpeech</a>
+                </h4>
+                <p class="card-text"><small>September 2024</small></p>
                 <p class="card-text">
                   ReadyMadeSpeech provides AI-powered, customizable wedding speeches, helping create memorable and heartfelt memories with
                   ease.
@@ -360,20 +380,43 @@
                   <span class="badge bg-primary me-1">Bootstrap</span>
                   <span class="badge bg-primary me-1">OpenAI API</span>
                 </div>
-                <a href="https://readymadespeech.com/" class="btn btn-primary"><i class="bi bi-globe"></i> Website</a>
+                <a href="https://readymadespeech.com/" target="_blank" class="btn btn-primary"><i class="bi bi-globe"></i> Website</a>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-4">
             <div class="card">
-              <a href="https://productimageai.webflow.io/">
+              <a href="https://github.com/janjezek/earwitnessai/" target="_blank">
+                <img src="img/earwitnessai.png" class="card-img-top" alt="EarWitnessAI" />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://github.com/janjezek/earwitnessai/" target="_blank" class="text-dark text-decoration-none"
+                    >EarWitnessAI</a
+                  >
+                </h4>
+                <p class="card-text"><small>May 2024</small></p>
+                <p class="card-text">Open-source, AI-powered voice-to-text app for macOS</p>
+                <div class="mb-2">
+                  <span class="badge bg-primary me-1">Python</span>
+                  <span class="badge bg-primary me-1">OpenAI API</span>
+                </div>
+                <a href="https://github.com/janjezek/earwitnessai/" target="_blank" class="btn btn-primary"
+                  ><i class="bi bi-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <a href="https://productimageai.webflow.io/" target="_blank">
                 <img src="img/productimageai.png" class="card-img-top" alt="ProductImageAI" />
               </a>
               <div class="card-body">
-                <h5 class="card-title">
-                  <a href="https://productimageai.webflow.io/" class="text-dark text-decoration-none">ProductImageAI</a>
-                </h5>
-                <p class="card-text">November 2022</p>
+                <h4 class="card-title">
+                  <a href="https://productimageai.webflow.io/" target="_blank" class="text-dark text-decoration-none">ProductImageAI</a>
+                </h4>
+                <p class="card-text"><small>November 2022</small></p>
                 <p class="card-text">
                   ProductImageAI generates high-quality product images using AI, helping e-commerce businesses create attractive visuals
                   quickly.
@@ -384,7 +427,7 @@
                   <span class="badge bg-primary me-1">Python</span>
                   <span class="badge bg-primary me-1">Stable Diffusion</span>
                 </div>
-                <a href="https://productimageai.webflow.io/" class="btn btn-primary"><i class="bi bi-globe"></i> Website</a>
+                <a href="https://productimageai.webflow.io/" target="_blank" class="btn btn-primary"><i class="bi bi-globe"></i> Website</a>
               </div>
             </div>
           </div>
