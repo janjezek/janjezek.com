@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
 :root {
   --primary-color: #31aab7;
@@ -7,8 +6,7 @@
   --text-color: #737373;
   --heading-color: #08090a;
   --border-color: #d6d6d6;
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Lato", sans-serif;
+  --primary-font: "Lato", sans-serif;
 }
 body {
   font-family: var(--primary-font);
@@ -90,7 +88,7 @@ h4 {
   height: 50px;
 }
 .container {
-  max-width: 624px; /* Adjust the width as needed */
+  max-width: 624px;
   margin: auto;
 }
 .card,
