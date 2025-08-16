@@ -11,6 +11,8 @@
 body {
   font-family: var(--primary-font);
   color: var(--text-color);
+  background-color: #e3edee;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -32,12 +34,15 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+  padding-top: 0.75rem;
 }
 h3 {
   font-size: 1.25rem;
+  padding-top: 0.75rem;
 }
 h4 {
   font-size: 1.15rem;
+  padding-top: 0.75rem;
   margin-bottom: 0.1rem !important;
 }
 .btn-primary,
@@ -88,10 +93,11 @@ h4 {
   height: 50px;
 }
 .container {
-  max-width: 624px;
+  max-width: 720px;
   margin: auto;
 }
 .card,
 .brand-container {
   border: 1px solid var(--border-color);
+  background-color: #fff;
 }
