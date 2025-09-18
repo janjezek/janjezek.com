@@ -6,4 +6,4 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NC]
   Header set X-Robots-Tag "noindex"
 </Files>
 
-RewriteRule ^.*$ https://www.youtube.com/watch?v=xvFZjo5PgG0 [R=301,L]
+# RewriteRule ^.*$ https://www.youtube.com/watch?v=xvFZjo5PgG0 [R=301,L]
